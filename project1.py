@@ -32,20 +32,15 @@ try:
 except Exception as e:
 	print('[[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mhasim_ganz...')
 prox=open('.prox.txt','r').read().splitlines()
-for xd in range(10000):
-    a='Mozilla/5.0 (Linux; Android 12;'
-    b=random.randrange(1, 9)
-    c=random.randrange(1, 9)
-    d='SAMSUNG SM-G986U)'
-    e=random.randrange(100, 9999)
-    f='AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/17.0 Chrome/96.0.4664.104'
-    g=random.randrange(1, 9)
-    h=random.randrange(1, 4)
-    i=random.randrange(1, 4)
-    j=random.randrange(1, 4)
-    k='Mobile Safari/537.36'
-    uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-    ugen2.append(uaku)
+for x in range(1000):
+	rr = random.randint
+	rc = random.choice
+	A = f'Mozilla/5.0 (Linux; Android {str(rr(8,10))}; Redmi {str(rr(4,9))} Build/PPR1.'
+	B = f'{str(rr(111111,199999))}.011; en-us) AppleWebKit/537.36 '
+	C = f'(KHTML, like Gecko) UCBrowser/79.0.{str(rr(1111,9999))}.136 Mobile Safari'
+	D = f'/537.36 Puffin/9.7.2.{str(rr(11111,99999))}AP'
+	uaku = f'{A}{B}{C}{D}'
+	ugen.append(uaku)
 
     aa='Mozilla/5.0 (Linux; Android'
     b=random.choice(['8','9','10','11','12'])
@@ -59,8 +54,8 @@ for xd in range(10000):
     j=random.randrange(4500,5900)
     k=random.randrange(40,200)
     l='Safari/537.36'
-    uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-    ugen.append(uaku2)
+    uaku=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
+    ugen2.append(uaku2)
 for x in range(10):
 	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
 	b=random.randrange(100, 9999)
