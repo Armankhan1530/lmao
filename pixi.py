@@ -297,6 +297,8 @@ def passwrd():
 			else:pass
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
+			elif 'bukalapak' in method:
+				pool.submit(crackbukalapak,idf,pwv)
 			else:
 				pool.submit(crack,idf,pwv)
 	print('')
@@ -352,6 +354,7 @@ def crack(idf,pwv):
 			time.sleep(31)
 	loop+=1
 	#------metode Bukalapak--------#
+	def crackbukalapak(idf,pwv):
 	global loop,ok,cp
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
