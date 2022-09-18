@@ -352,14 +352,13 @@ def crack(idf,pwv):
 			time.sleep(31)
 	loop+=1
 	#------metode Bukalapak--------#
-	def crackBukalapak(idf,pwv):
 	global loop,ok,cp
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print('\r%s%s/%s ok:%s/cp:%s %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r%s%s/%s ok : %s cp : %s %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua2 = 'Mozilla/5.0 (Linux; Android 10; SO-01L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Mobile Safari/537.36'
 	ses = requests.Session()
 	for pw in pwv:
 		try:
