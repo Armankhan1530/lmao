@@ -472,7 +472,7 @@ def passwrd():
 	print('')
 	print(f'\t{x}>>{k} Good Bye Thanks To Using My Script {x} << ')
 #--------------------[ METODE-MOBILE ]-----------------#
-def crackunipin(idf,pwv):
+def crack(idf,pwv):
 	global loop,ok,cp
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
@@ -512,7 +512,7 @@ def crackunipin(idf,pwv):
 			time.sleep(31)
 	loop+=1
 #------------------[ METHODE-FREE-FB ]-------------------#
-def crackunipin(idf,pwv):
+def crackfree(idf,pwv):
 	global loop,ok,cp
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
@@ -551,7 +551,7 @@ def crackunipin(idf,pwv):
 			time.sleep(31)
 	loop+=1
 #----------------------[ METHODE-MBASIC ]-----------------#
-def crackunipin(idf,pwv):
+def crackmbasic(idf,pwv):
 	global loop,ok,cp
 	bi = random.choice(['\33[m'])
 	pers = loop*100/len(id2)
