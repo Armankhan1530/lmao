@@ -460,7 +460,7 @@ def passwrd():
 				pool.submit(crackfree,idf,pwv)
 			elif 'mbasic' in method:
 				pool.submit(crackmbasic,idf,pwv)
-			elif 'unipin' in method:
+#			elif 'unipin' in method:
 				pool.submit(crackunipin,idf,pwv)
 			else:
 				pool.submit(crackmbasic,idf,pwv)
