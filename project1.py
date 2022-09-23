@@ -404,7 +404,7 @@ def setting():
 		method.append('free')
 	elif hc in ['3','03']:
 		method.append('mbasic')
-	elif hc in ['4','04']:
+#	elif hc in ['4','04']:
 		method.append('unipin')
 	else:
 		method.append('mobile')
