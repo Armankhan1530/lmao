@@ -261,7 +261,7 @@ def banner():
 \t/    |    \/    Y    \ |    |   \ |     \   
 \t\____|__  /\____|__  / |______  / \___  /   
 \t        \/         \/         \/      \/ • Arona Multi Brute Force •
-\t\t{garis} author by {K}HikmatXD
+\t\t{garis} author by {K}Pixi
 """)
 
 def cek_expired_script():
