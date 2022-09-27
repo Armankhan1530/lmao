@@ -62,7 +62,7 @@ for xd in range(10000):
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
 
-aa='Mozilla/5.0 (Linux; U; Android'
+    aa='Mozilla/5.0 (Linux; Android'
     b=random.choice(['8','9','10','11','12'])
     c='en-US; V2141 Build/SP1A.210812.003'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
