@@ -137,18 +137,18 @@ for xd in range(10000):
     uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
     ugen2.append(uaku)
 
-    aa='Mozilla/5.0 (Linux; Android'
+    aa='Mozilla/5.0 (Linux; U; Android'
     b=random.choice(['8','9','10','11','12'])
-    c='KFMUWI)'
+    c='en-US; V2141 Build/SP1A.210812.003'
     d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Silk/102.4.13 like Chrome/'
+    g='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
     h=random.randrange(73,200)
     i='0'
     j=random.randrange(4500,5900)
     k=random.randrange(40,200)
-    l='Safari/537.36'
+    l='UCBrowser/13.4.0.1306 Mobile Safari/537.36'
     uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
     ugen.append(uaku2)
     
